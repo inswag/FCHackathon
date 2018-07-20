@@ -1,0 +1,976 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00118FF17292D4BB985B9917F0C5D701 /* BlurFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DC5E3C6FC3626E8F7077FF80320928 /* BlurFilter.swift */; };
+		020A68EB14F949D57AEC8419B0406933 /* FlexibleImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B4D1BFA235A01F2CC3FEE86BA9D34C3D /* FlexibleImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0538809AF098CF87BB5EA80E11D9B964 /* FlexibleImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E30A33C8E6CE47E3B3FD3538A9EB8F78 /* FlexibleImage-dummy.m */; };
+		05A76305E2CCF75DDB6AECE986A315A2 /* AddFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5BF57F17597FE154C9E3C8C94B3BC /* AddFilter.metal */; };
+		070BAD37D042F756B3F36EC53B41715B /* ColorFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34228B0C5BAA1089A07FC1A5B66A1BEA /* ColorFilter.swift */; };
+		07629D9D841BA0730857E8F94D8A97D6 /* SaturationFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7476A6F1465C6BF958D6433F99E4EE92 /* SaturationFilter.swift */; };
+		0CB735CD19089628EF6D5AF3750022B1 /* PinLightFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC01854BE479575C01D0A59508A3E980 /* PinLightFilter.swift */; };
+		0E890F9F0D365B8D074B916773CB49AB /* ColorDodgeFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 9464DC77B6A64F3F0C7662B4647CA8AF /* ColorDodgeFilter.metal */; };
+		17DE11019E17564DC6DB7F80A6B79274 /* ImageDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C6E90853ECA2E427AC0DD8BDE176F9 /* ImageDevice.swift */; };
+		17EFF75CA70B8E2E74705B68981B69C1 /* OverlayFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E89926A6E50BD6EB6E023E19D22123 /* OverlayFilter.swift */; };
+		19525F8DC0A152E2323618461547DA99 /* EdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6982CBAEFCAAA843AB7156D14D833C2D /* EdgeInsets.swift */; };
+		19F731D19FD3944FE5609628DCD77339 /* LightenFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 2DA13670D11A2D25858D2C05815916F1 /* LightenFilter.metal */; };
+		1CBCAFB63AE895ADD8EA5F79E37DE9FF /* SubtractFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E575BB92394895B29460D940FC6658AB /* SubtractFilter.swift */; };
+		1D2A071AB82C1191FD732D25DD92341F /* OverlayFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 7616303B443FE85369C3944CD6DD5C5A /* OverlayFilter.metal */; };
+		1D6079B0EE96638D9907097EC455CD4F /* CornerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E21BE846B39F2EC1D3220B607E12BE /* CornerType.swift */; };
+		1F09025C6C7A4B5518BE88F0D4407176 /* AverageFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 1C84A4D181B8F3CC937BC0A926DAD58B /* AverageFilter.metal */; };
+		200A190BCCC411726AD3B655F52AC669 /* HardMixFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = E65D9F9DF8B58CCAB9B9CF3F610F0584 /* HardMixFilter.metal */; };
+		22D300885AF13453F803A46075D70357 /* LinearLightFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = CAD8E498674C820B66A0ED091286CFB6 /* LinearLightFilter.metal */; };
+		24366A074FF54370B7C461C5D2187542 /* SaturationFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 55E87A4C7E8CBC243DC684535279D3D8 /* SaturationFilter.metal */; };
+		253917686D6B8D09DA5A31AD55ABB38F /* DifferenceFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC5C51E956ECB50D61187474E5F72C6 /* DifferenceFilter.swift */; };
+		275C995431F4512BB5347A18A127394A /* AlgorithmType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C567C179D5A87516DCE173DD44E8A915 /* AlgorithmType.swift */; };
+		2A4B8DEEE5AB06F1E6DA7E514D1A222D /* MultiplyFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45D2871ED3C45913553D1EE8069B00A /* MultiplyFilter.swift */; };
+		2A4C5AFDAF8124F8FC91CE48C6F36804 /* ContrastFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEF9E71C95B4B229F786DEFAFB765A6 /* ContrastFilter.swift */; };
+		2D696BB5097D90C7A557D7F41628A7ED /* LuminosityFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 2FF471A62F53DB74A4AE209C4B1343ED /* LuminosityFilter.metal */; };
+		2E49066F43DE453C22852D68FF5677B4 /* HueFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36185C4D9140214FEBD259DC35F6F49 /* HueFilter.swift */; };
+		2E4D4A9907BCFC4B5A5AB42003320BC5 /* ColorFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = E439DDD7B6F0093CA13029538EF5D54C /* ColorFilter.metal */; };
+		2F4CE1C11039E09363098AE2DB6B6AC7 /* ReflectFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 6E821F865FCF945E0ECAB31DA811F0DE /* ReflectFilter.metal */; };
+		3226D1D3245138BE30154B0B8008C88F /* LuminosityFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9408444422C8F67F7379E59EC401D1F1 /* LuminosityFilter.swift */; };
+		3A9824EFF0F8B68FFAFD292CCBF723B2 /* HueFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = E20E4DDA1BB988E5C4AADB925DF818A8 /* HueFilter.metal */; };
+		3B3A1635F6C978BCAA1362B7451D95A7 /* FIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9133B92B257D5FC2B684F8931E6BD58 /* FIColor.swift */; };
+		3B442496149C11E935FA482A8B5C286C /* NegativeFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8A26AA5F32E9377662F254FF2BF8836E /* NegativeFilter.metal */; };
+		3D02AC308E91350F0E30E0F318FB68DB /* GlowFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7878F90F301CC687BDE8C308AD534A50 /* GlowFilter.swift */; };
+		4093DB87F72331BC26037CC42E74809A /* AverageFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F018B7C01E368FB1DC1950754F1AC244 /* AverageFilter.swift */; };
+		42A99DF41607595AFB0040701479FE06 /* GammaFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D215D4E7251DC6FB6A206291E95533 /* GammaFilter.swift */; };
+		43B5AB3E1FED0C92E38431F3A54572F0 /* SwizzlingFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = B1420AAC8E8BBE2C93F3BEC4D9558C66 /* SwizzlingFilter.metal */; };
+		470C701446418B637811E2A807AFA632 /* ColorDodgeFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FB2FC22FB3545AD3A818989173F91F /* ColorDodgeFilter.swift */; };
+		47CDD575FCC9D6B7FBF215FDA041E64E /* HardLightFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = FD77BCF5471CFEC96E0180FB6CB6868F /* HardLightFilter.metal */; };
+		497427FCEA502DCE063D18269D8C5C39 /* FIColorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81E9D8E1CAEEE68AC84F268BBCF7008 /* FIColorType.swift */; };
+		49C1F916B79894AC1B2FF6757B1D03C1 /* GlowFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = CC0EB97B08452C1C27F63BDFB58BAD05 /* GlowFilter.metal */; };
+		4D681198E1965582233C12C79525AF5E /* DarkenFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A07CA648E35D4E6C5BEEE7A2063333 /* DarkenFilter.swift */; };
+		4E99BF1069EF772EBE409F09905013A9 /* ContextType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCCC8A37FF88CEF17EDA16C866C68F7 /* ContextType.swift */; };
+		51968A4F1029EEF26BFC7438BDCAE759 /* NegativeFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B436BE096A9FF012FF590C96B3B06393 /* NegativeFilter.swift */; };
+		54BB0E9187DD26D7080E4FC1FC734A9F /* NormalFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = F175DA497029C1DE91D4348A9D871718 /* NormalFilter.metal */; };
+		56AEDB232A4B4ECD103B5B3C9DB98E12 /* ExclusionFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9141105BC5995DBDFC046D06649C8C1 /* ExclusionFilter.swift */; };
+		56E49BE201981E25BC416E7259E6B251 /* ImageFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01804BA323C3F899498A73576B8949CB /* ImageFilter.swift */; };
+		5A76CFE9A89683088FF655A656E2C2AC /* MonochromeFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = E5C42AC1796757A6C73146C42A389933 /* MonochromeFilter.metal */; };
+		5D11D39DF53355C8005B4B628F1DBABC /* LinearDodgeFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2C394EB7826189071B3D77056EF903 /* LinearDodgeFilter.swift */; };
+		5E24B2B569C3F8A05B520BB119F01BA0 /* DifferenceFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 1E8D8FA6A54AA0D00F63F708EF7A6F2C /* DifferenceFilter.metal */; };
+		5F82BF9A5EB49D624649F1DEDF78AF92 /* FIBezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF816A75A492BADA69005A34C8EEFB6 /* FIBezierPath.swift */; };
+		5F9BDED97D74194852F82E0ED62AE14E /* VibranceFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496DC68F73DF3AD75600EDA1F43612A4 /* VibranceFilter.swift */; };
+		67713D87FBC6773DEE3CC70E477E2693 /* HardMixFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93332C6E4F6E18DE1C99E06BA63580C /* HardMixFilter.swift */; };
+		6DDBE8C154372122F160CB9AA40F3128 /* LinearBurnFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 26ABCC51DF08A7E174FC4CDD0F1D2C40 /* LinearBurnFilter.metal */; };
+		7405E6601DF2A6997E6B5BE5658A2D73 /* SolarizeFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C5F786F0FF6AA6DC59E842912E095F /* SolarizeFilter.swift */; };
+		74220F8D749467A03C7F9DDA886EA2D2 /* SepiaFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = C62B6762745E15795120A9076F08ADBE /* SepiaFilter.metal */; };
+		75E07202C4F2832934CE834BACB683D2 /* PosterizeFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 29F51DFE4EEE2754A63DAA8E9E1EED92 /* PosterizeFilter.metal */; };
+		772A99A40A0EB004F49F98B8AC71065E /* GammaFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 65A1745DCFBF20683DFFCB0844A39302 /* GammaFilter.metal */; };
+		7A0B0FE05E456BC9CFDBA2CD9C769F29 /* VividLightFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 90C81D0E8BCD9A5D74CF855AC242E9BD /* VividLightFilter.metal */; };
+		86015E6A05E1EE502C46D7C97A85E192 /* VividLightFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131727DA269B8FFC963819C3D3BAF614 /* VividLightFilter.swift */; };
+		899ADDF02CD49D5C137D9155384731B9 /* SoftLightFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80417B5C6B7FF576FEFC13DCC588D97E /* SoftLightFilter.swift */; };
+		8A78F837050E38D8AB4A2FE95211C9A9 /* LinearBurnFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01E5575268E76B550ABE1107300492 /* LinearBurnFilter.swift */; };
+		8FEFF53049D076777BEE1A997731D98B /* SolarizeFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 992A758B9EC86A40148401134B96D6F0 /* SolarizeFilter.metal */; };
+		926D10EDD671FFACF5A98B307D42342B /* PhoenixFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5309F49D3C716B82955EB6B921FA17 /* PhoenixFilter.swift */; };
+		986654AC09BB0D80A4913C62A44F425E /* AddFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14683DEBE4466225D315BB1211DF8EB1 /* AddFilter.swift */; };
+		9AACAAD1BF0B17A4B9750374C3A65CF5 /* NormalFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4AF82E7A1C00824F5754E15E284D87 /* NormalFilter.swift */; };
+		9C186F8F4B6A27916E92CD905B63894D /* DarkenFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 0FC43371CDBFE27C82AFF02EEDDDF639 /* DarkenFilter.metal */; };
+		9E7A5D3749463FAFED40878B13C168BF /* FIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109D154211EF70B2837F2F78A1148C96 /* FIImage.swift */; };
+		9F9E40678D588947B501042F9DAF11F3 /* GreyscaleFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A622FF6F89E846184DDFC9A0DBB40 /* GreyscaleFilter.swift */; };
+		A1378D3813ED0B52E6D5B7FB8B4BB806 /* VibranceFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 495BEDC9B1A23F055B666B3FC8922CB0 /* VibranceFilter.metal */; };
+		A17CAE809F2CBFFB9A5193B0200F9070 /* ExclusionFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 7E1EA433A9235551A5561FD995C848E3 /* ExclusionFilter.metal */; };
+		A34AAA1858BD192A03E750384F6510F0 /* InvertFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9F52D1CFC4C0E6221748F776A7FCB0 /* InvertFilter.swift */; };
+		A5901E76A555C55F2EEF86240DDACFB8 /* ScreenFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 4F9D1510422066D99CDB7A876807078E /* ScreenFilter.metal */; };
+		A5AE88E768BABE7C33382ACC3DAF8BF0 /* SubtractFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = B83ACD45FCC4B6E5B0E11F92FFCA4A00 /* SubtractFilter.metal */; };
+		A6092D61C834CF748EF346858ACFFABC /* LightenFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68640A850B803AD3297C58AD2A7EA82 /* LightenFilter.swift */; };
+		A702C33390659BE40FC4D811D6C395BD /* PosterizeFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B7E8B50D46B1A74E7793ECDA7C0A5F /* PosterizeFilter.swift */; };
+		AD7B20FD815FE4EEDE9AE579ABF63D4A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		B86DE4F1BF0206B9039EF30BC86D3AAF /* HardLightFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C553DFD2406419CDCA64991498102AB /* HardLightFilter.swift */; };
+		C03D95658403AD3794F9E97AE0E6FA19 /* PinLightFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 1D43897756D44EB31D1EBAC29E206C18 /* PinLightFilter.metal */; };
+		C1B32422808A3F0DB14453A6EA00FF27 /* TextureAppendFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = DE6907E49E3FF8E78410B9CBD74F75AB /* TextureAppendFilter.metal */; };
+		C549907D1B4858ECC49CF525A11A1AB4 /* BlurFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = A6B4AB2C9BA6AE01C0FA5D60B69DF1DC /* BlurFilter.metal */; };
+		C5FA2FE9907634392EB38D7092E96CF8 /* TextureAppendFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B34D9B292AADFC88C7BE9B960583E5D /* TextureAppendFilter.swift */; };
+		C708641A8F52318F4131E1CC2FFB7336 /* FlexibleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1C5B645B534E32E7A9E9567B042CCB /* FlexibleImage.swift */; };
+		C7CEDBBE53971481EA296B6E66326F97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		C93C9A5E81D418A527D462C1563D4F7E /* Pods-hackathon-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7B74C2A0F6D31BD6000D5EA3445EDB /* Pods-hackathon-dummy.m */; };
+		C9A19173442FC3F05A053CA86CC946B1 /* LinearLightFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738D258BCCBC3DCE8BBAA1E5DD0ECB24 /* LinearLightFilter.swift */; };
+		D06B487EC16EBA8349D43DED98B39F49 /* BrightnessFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 09E58A3AEEDC6C8A51D243BEF0E022DE /* BrightnessFilter.metal */; };
+		D35412A34A4383BF0CCCBA4C35737002 /* ScreenFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A354ADE926AB18F03CB185375987E0 /* ScreenFilter.swift */; };
+		D4EE2909F4A527F6674334C2D28E8893 /* Pods-hackathon-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0622CCA68032865BB6F8FCE49DD62AFD /* Pods-hackathon-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D73A6F5ABBFBD6369AD4C1238FA8938D /* ImageNoneDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25599F2D412CB0A4DEB49A60A3F14E92 /* ImageNoneDevice.swift */; };
+		D7458003604E0A4FE7EE5CEA3E0EC7B5 /* MonochromeFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B2357786A0FDB7D49DD35C80DB87F6 /* MonochromeFilter.swift */; };
+		DAC58EF14D172495C17A9281F67FDFCE /* SoftLightFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 099C123B9ECC9BE520EA03DBA6403B62 /* SoftLightFilter.metal */; };
+		DE1411FBB3B716A88F1C8C7083B825A6 /* ColorBurnFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 742B0B8AF538F066FD7107AAABED6AFD /* ColorBurnFilter.metal */; };
+		DF1F2142EFBA5A34EC41FA099B4D261E /* PhoenixFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = F693E7D023747F61AF872878C949E330 /* PhoenixFilter.metal */; };
+		E3BCC82E134F47E2048CCE01059B422D /* ColorBurnFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFACDA723E22BA04775EC5C7C3E7EB92 /* ColorBurnFilter.swift */; };
+		E50D16919747DC8A49BD54103650D0C9 /* MultiplyFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 842E86FE96801623C4CDEE8B52633601 /* MultiplyFilter.metal */; };
+		E6B91882AB70F608B27648A3CDEA1DCB /* GreyscaleFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = A8FE540C45F3FA395FD70B784B1CCBDF /* GreyscaleFilter.metal */; };
+		E717912A5AAA93F1916BE036582B38CC /* BrightnessFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB8EC01AFC71012B0D2A7720D4E0EF3 /* BrightnessFilter.swift */; };
+		E8159D8D2CC71D08906E604819338668 /* ContrastFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = D187FD67DAE627A10DDE56C3CE30FE34 /* ContrastFilter.metal */; };
+		EAC1924C2F52F536744F6EB4112ABD7C /* SwizzlingFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EE63827AB405F7F61178A6F0C91DC0 /* SwizzlingFilter.swift */; };
+		F023DCB1A5B5F90EFC606E985A6D57FF /* ChromaKeyFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 353CDDDCAD9E0AB7A7A9F696EB6D73F6 /* ChromaKeyFilter.metal */; };
+		F0CD28CF6DA9A79273C89AE1606FC606 /* InvertFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 08DD7B7300AEC4171822E2CD25778AAD /* InvertFilter.metal */; };
+		F1C5ED862DC08133D6EE838C4735205D /* ImageMetalDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C875B5660F2C4D04C98FF32DDA649C /* ImageMetalDevice.swift */; };
+		F53138A84D23E0DAED44FB3B0CD4FC72 /* SepiaFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91BD0FB805D578F336C2BF98FD79984 /* SepiaFilter.swift */; };
+		F78FEAC28321D5FD2C5E9BB532525EEC /* ChromaKeyFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF86345FBF4EF7578716D8436C1AD78 /* ChromaKeyFilter.swift */; };
+		FE71C29A7102AE364801140B5A21F9D3 /* ReflectFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E4CD465DE044B3816D871CEFB493ED /* ReflectFilter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0BBB835A24D68F570368CDEAB4FA2C2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 644E107FBE943FF51CB4CF431EF1FCF4;
+			remoteInfo = FlexibleImage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01804BA323C3F899498A73576B8949CB /* ImageFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageFilter.swift; path = Sources/Abstract/ImageFilter.swift; sourceTree = "<group>"; };
+		0281A2572BEE97098E46489B0BFD4370 /* FlexibleImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlexibleImage.xcconfig; sourceTree = "<group>"; };
+		0622CCA68032865BB6F8FCE49DD62AFD /* Pods-hackathon-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-hackathon-umbrella.h"; sourceTree = "<group>"; };
+		08DC5E3C6FC3626E8F7077FF80320928 /* BlurFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlurFilter.swift; path = Sources/Filter/BlurFilter.swift; sourceTree = "<group>"; };
+		08DD7B7300AEC4171822E2CD25778AAD /* InvertFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = InvertFilter.metal; path = Sources/Filter/InvertFilter.metal; sourceTree = "<group>"; };
+		099C123B9ECC9BE520EA03DBA6403B62 /* SoftLightFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = SoftLightFilter.metal; path = Sources/Filter/SoftLightFilter.metal; sourceTree = "<group>"; };
+		09C5F786F0FF6AA6DC59E842912E095F /* SolarizeFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SolarizeFilter.swift; path = Sources/Filter/SolarizeFilter.swift; sourceTree = "<group>"; };
+		09E58A3AEEDC6C8A51D243BEF0E022DE /* BrightnessFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = BrightnessFilter.metal; path = Sources/Filter/BrightnessFilter.metal; sourceTree = "<group>"; };
+		0BB8EC01AFC71012B0D2A7720D4E0EF3 /* BrightnessFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BrightnessFilter.swift; path = Sources/Filter/BrightnessFilter.swift; sourceTree = "<group>"; };
+		0FC43371CDBFE27C82AFF02EEDDDF639 /* DarkenFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = DarkenFilter.metal; path = Sources/Filter/DarkenFilter.metal; sourceTree = "<group>"; };
+		0FF86345FBF4EF7578716D8436C1AD78 /* ChromaKeyFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChromaKeyFilter.swift; path = Sources/Filter/ChromaKeyFilter.swift; sourceTree = "<group>"; };
+		109D154211EF70B2837F2F78A1148C96 /* FIImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FIImage.swift; path = Sources/Type/FIImage.swift; sourceTree = "<group>"; };
+		131727DA269B8FFC963819C3D3BAF614 /* VividLightFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VividLightFilter.swift; path = Sources/Filter/VividLightFilter.swift; sourceTree = "<group>"; };
+		14683DEBE4466225D315BB1211DF8EB1 /* AddFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AddFilter.swift; path = Sources/Filter/AddFilter.swift; sourceTree = "<group>"; };
+		14A07CA648E35D4E6C5BEEE7A2063333 /* DarkenFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DarkenFilter.swift; path = Sources/Filter/DarkenFilter.swift; sourceTree = "<group>"; };
+		17B7E8B50D46B1A74E7793ECDA7C0A5F /* PosterizeFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PosterizeFilter.swift; path = Sources/Filter/PosterizeFilter.swift; sourceTree = "<group>"; };
+		19E21BE846B39F2EC1D3220B607E12BE /* CornerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CornerType.swift; path = Sources/Type/CornerType.swift; sourceTree = "<group>"; };
+		1BF816A75A492BADA69005A34C8EEFB6 /* FIBezierPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FIBezierPath.swift; path = Sources/Type/FIBezierPath.swift; sourceTree = "<group>"; };
+		1C84A4D181B8F3CC937BC0A926DAD58B /* AverageFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = AverageFilter.metal; path = Sources/Filter/AverageFilter.metal; sourceTree = "<group>"; };
+		1D43897756D44EB31D1EBAC29E206C18 /* PinLightFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = PinLightFilter.metal; path = Sources/Filter/PinLightFilter.metal; sourceTree = "<group>"; };
+		1E8D8FA6A54AA0D00F63F708EF7A6F2C /* DifferenceFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = DifferenceFilter.metal; path = Sources/Filter/DifferenceFilter.metal; sourceTree = "<group>"; };
+		1F8302E7604F72B6D1C8509F1E6F89A7 /* FlexibleImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlexibleImage-prefix.pch"; sourceTree = "<group>"; };
+		25599F2D412CB0A4DEB49A60A3F14E92 /* ImageNoneDevice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageNoneDevice.swift; path = Sources/Device/ImageNoneDevice.swift; sourceTree = "<group>"; };
+		26ABCC51DF08A7E174FC4CDD0F1D2C40 /* LinearBurnFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = LinearBurnFilter.metal; path = Sources/Filter/LinearBurnFilter.metal; sourceTree = "<group>"; };
+		29F51DFE4EEE2754A63DAA8E9E1EED92 /* PosterizeFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = PosterizeFilter.metal; path = Sources/Filter/PosterizeFilter.metal; sourceTree = "<group>"; };
+		2DA13670D11A2D25858D2C05815916F1 /* LightenFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = LightenFilter.metal; path = Sources/Filter/LightenFilter.metal; sourceTree = "<group>"; };
+		2FF471A62F53DB74A4AE209C4B1343ED /* LuminosityFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = LuminosityFilter.metal; path = Sources/Filter/LuminosityFilter.metal; sourceTree = "<group>"; };
+		30494FE917C0F6D04DCA5658AC1548F0 /* FlexibleImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FlexibleImage.modulemap; sourceTree = "<group>"; };
+		34228B0C5BAA1089A07FC1A5B66A1BEA /* ColorFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorFilter.swift; path = Sources/Filter/ColorFilter.swift; sourceTree = "<group>"; };
+		353CDDDCAD9E0AB7A7A9F696EB6D73F6 /* ChromaKeyFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = ChromaKeyFilter.metal; path = Sources/Filter/ChromaKeyFilter.metal; sourceTree = "<group>"; };
+		396F9703087106E0A198E72687B62BD8 /* Pods_hackathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_hackathon.framework; path = "Pods-hackathon.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39860A0E5859D917F533059CEFF39CE4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BA5BF57F17597FE154C9E3C8C94B3BC /* AddFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = AddFilter.metal; path = Sources/Filter/AddFilter.metal; sourceTree = "<group>"; };
+		495BEDC9B1A23F055B666B3FC8922CB0 /* VibranceFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = VibranceFilter.metal; path = Sources/Filter/VibranceFilter.metal; sourceTree = "<group>"; };
+		496DC68F73DF3AD75600EDA1F43612A4 /* VibranceFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VibranceFilter.swift; path = Sources/Filter/VibranceFilter.swift; sourceTree = "<group>"; };
+		4AC5C610365C5CA914269668775E2DF6 /* FlexibleImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FlexibleImage.framework; path = FlexibleImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F01E5575268E76B550ABE1107300492 /* LinearBurnFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LinearBurnFilter.swift; path = Sources/Filter/LinearBurnFilter.swift; sourceTree = "<group>"; };
+		4F9D1510422066D99CDB7A876807078E /* ScreenFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = ScreenFilter.metal; path = Sources/Filter/ScreenFilter.metal; sourceTree = "<group>"; };
+		50EE63827AB405F7F61178A6F0C91DC0 /* SwizzlingFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwizzlingFilter.swift; path = Sources/Filter/SwizzlingFilter.swift; sourceTree = "<group>"; };
+		53D215D4E7251DC6FB6A206291E95533 /* GammaFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GammaFilter.swift; path = Sources/Filter/GammaFilter.swift; sourceTree = "<group>"; };
+		55E87A4C7E8CBC243DC684535279D3D8 /* SaturationFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = SaturationFilter.metal; path = Sources/Filter/SaturationFilter.metal; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		62B2357786A0FDB7D49DD35C80DB87F6 /* MonochromeFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MonochromeFilter.swift; path = Sources/Filter/MonochromeFilter.swift; sourceTree = "<group>"; };
+		653372342263D32A9A742C7E027D17BD /* Pods-hackathon-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-hackathon-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6573EE2D386C94A2256DA38ED551849F /* Pods-hackathon-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-hackathon-acknowledgements.plist"; sourceTree = "<group>"; };
+		65A1745DCFBF20683DFFCB0844A39302 /* GammaFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = GammaFilter.metal; path = Sources/Filter/GammaFilter.metal; sourceTree = "<group>"; };
+		6982CBAEFCAAA843AB7156D14D833C2D /* EdgeInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EdgeInsets.swift; path = Sources/Type/EdgeInsets.swift; sourceTree = "<group>"; };
+		6B4AF82E7A1C00824F5754E15E284D87 /* NormalFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NormalFilter.swift; path = Sources/Filter/NormalFilter.swift; sourceTree = "<group>"; };
+		6E821F865FCF945E0ECAB31DA811F0DE /* ReflectFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = ReflectFilter.metal; path = Sources/Filter/ReflectFilter.metal; sourceTree = "<group>"; };
+		6EEF9E71C95B4B229F786DEFAFB765A6 /* ContrastFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContrastFilter.swift; path = Sources/Filter/ContrastFilter.swift; sourceTree = "<group>"; };
+		738D258BCCBC3DCE8BBAA1E5DD0ECB24 /* LinearLightFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LinearLightFilter.swift; path = Sources/Filter/LinearLightFilter.swift; sourceTree = "<group>"; };
+		742B0B8AF538F066FD7107AAABED6AFD /* ColorBurnFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = ColorBurnFilter.metal; path = Sources/Filter/ColorBurnFilter.metal; sourceTree = "<group>"; };
+		7476A6F1465C6BF958D6433F99E4EE92 /* SaturationFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SaturationFilter.swift; path = Sources/Filter/SaturationFilter.swift; sourceTree = "<group>"; };
+		75991F7422D82AF79477814E5D9E53AC /* Pods-hackathon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-hackathon.release.xcconfig"; sourceTree = "<group>"; };
+		7616303B443FE85369C3944CD6DD5C5A /* OverlayFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = OverlayFilter.metal; path = Sources/Filter/OverlayFilter.metal; sourceTree = "<group>"; };
+		7878F90F301CC687BDE8C308AD534A50 /* GlowFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlowFilter.swift; path = Sources/Filter/GlowFilter.swift; sourceTree = "<group>"; };
+		78C6E90853ECA2E427AC0DD8BDE176F9 /* ImageDevice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDevice.swift; path = Sources/Abstract/ImageDevice.swift; sourceTree = "<group>"; };
+		7C1C5B645B534E32E7A9E9567B042CCB /* FlexibleImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlexibleImage.swift; path = Sources/FlexibleImage.swift; sourceTree = "<group>"; };
+		7C553DFD2406419CDCA64991498102AB /* HardLightFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HardLightFilter.swift; path = Sources/Filter/HardLightFilter.swift; sourceTree = "<group>"; };
+		7E1EA433A9235551A5561FD995C848E3 /* ExclusionFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = ExclusionFilter.metal; path = Sources/Filter/ExclusionFilter.metal; sourceTree = "<group>"; };
+		80417B5C6B7FF576FEFC13DCC588D97E /* SoftLightFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SoftLightFilter.swift; path = Sources/Filter/SoftLightFilter.swift; sourceTree = "<group>"; };
+		83F718ABE084E9719DE45D59AEA19C2C /* Pods-hackathon-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-hackathon-resources.sh"; sourceTree = "<group>"; };
+		842E86FE96801623C4CDEE8B52633601 /* MultiplyFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = MultiplyFilter.metal; path = Sources/Filter/MultiplyFilter.metal; sourceTree = "<group>"; };
+		8A26AA5F32E9377662F254FF2BF8836E /* NegativeFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = NegativeFilter.metal; path = Sources/Filter/NegativeFilter.metal; sourceTree = "<group>"; };
+		8A7B74C2A0F6D31BD6000D5EA3445EDB /* Pods-hackathon-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-hackathon-dummy.m"; sourceTree = "<group>"; };
+		90C81D0E8BCD9A5D74CF855AC242E9BD /* VividLightFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = VividLightFilter.metal; path = Sources/Filter/VividLightFilter.metal; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9408444422C8F67F7379E59EC401D1F1 /* LuminosityFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LuminosityFilter.swift; path = Sources/Filter/LuminosityFilter.swift; sourceTree = "<group>"; };
+		9464DC77B6A64F3F0C7662B4647CA8AF /* ColorDodgeFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = ColorDodgeFilter.metal; path = Sources/Filter/ColorDodgeFilter.metal; sourceTree = "<group>"; };
+		992A758B9EC86A40148401134B96D6F0 /* SolarizeFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = SolarizeFilter.metal; path = Sources/Filter/SolarizeFilter.metal; sourceTree = "<group>"; };
+		9B34D9B292AADFC88C7BE9B960583E5D /* TextureAppendFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextureAppendFilter.swift; path = Sources/Filter/TextureAppendFilter.swift; sourceTree = "<group>"; };
+		9CCCC8A37FF88CEF17EDA16C866C68F7 /* ContextType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContextType.swift; path = Sources/Type/ContextType.swift; sourceTree = "<group>"; };
+		A6B4AB2C9BA6AE01C0FA5D60B69DF1DC /* BlurFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = BlurFilter.metal; path = Sources/Filter/BlurFilter.metal; sourceTree = "<group>"; };
+		A8FE540C45F3FA395FD70B784B1CCBDF /* GreyscaleFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = GreyscaleFilter.metal; path = Sources/Filter/GreyscaleFilter.metal; sourceTree = "<group>"; };
+		AF2C394EB7826189071B3D77056EF903 /* LinearDodgeFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LinearDodgeFilter.swift; path = Sources/Filter/LinearDodgeFilter.swift; sourceTree = "<group>"; };
+		B1420AAC8E8BBE2C93F3BEC4D9558C66 /* SwizzlingFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = SwizzlingFilter.metal; path = Sources/Filter/SwizzlingFilter.metal; sourceTree = "<group>"; };
+		B36185C4D9140214FEBD259DC35F6F49 /* HueFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HueFilter.swift; path = Sources/Filter/HueFilter.swift; sourceTree = "<group>"; };
+		B436BE096A9FF012FF590C96B3B06393 /* NegativeFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NegativeFilter.swift; path = Sources/Filter/NegativeFilter.swift; sourceTree = "<group>"; };
+		B4D1BFA235A01F2CC3FEE86BA9D34C3D /* FlexibleImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlexibleImage-umbrella.h"; sourceTree = "<group>"; };
+		B5A354ADE926AB18F03CB185375987E0 /* ScreenFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScreenFilter.swift; path = Sources/Filter/ScreenFilter.swift; sourceTree = "<group>"; };
+		B68640A850B803AD3297C58AD2A7EA82 /* LightenFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LightenFilter.swift; path = Sources/Filter/LightenFilter.swift; sourceTree = "<group>"; };
+		B83ACD45FCC4B6E5B0E11F92FFCA4A00 /* SubtractFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = SubtractFilter.metal; path = Sources/Filter/SubtractFilter.metal; sourceTree = "<group>"; };
+		BB9F52D1CFC4C0E6221748F776A7FCB0 /* InvertFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InvertFilter.swift; path = Sources/Filter/InvertFilter.swift; sourceTree = "<group>"; };
+		BFACDA723E22BA04775EC5C7C3E7EB92 /* ColorBurnFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorBurnFilter.swift; path = Sources/Filter/ColorBurnFilter.swift; sourceTree = "<group>"; };
+		C0FB2FC22FB3545AD3A818989173F91F /* ColorDodgeFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorDodgeFilter.swift; path = Sources/Filter/ColorDodgeFilter.swift; sourceTree = "<group>"; };
+		C567C179D5A87516DCE173DD44E8A915 /* AlgorithmType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlgorithmType.swift; path = Sources/Type/AlgorithmType.swift; sourceTree = "<group>"; };
+		C62B6762745E15795120A9076F08ADBE /* SepiaFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = SepiaFilter.metal; path = Sources/Filter/SepiaFilter.metal; sourceTree = "<group>"; };
+		CAD8E498674C820B66A0ED091286CFB6 /* LinearLightFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = LinearLightFilter.metal; path = Sources/Filter/LinearLightFilter.metal; sourceTree = "<group>"; };
+		CC0EB97B08452C1C27F63BDFB58BAD05 /* GlowFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = GlowFilter.metal; path = Sources/Filter/GlowFilter.metal; sourceTree = "<group>"; };
+		D06C39A0E3719C1204FC5475319147A9 /* Pods-hackathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-hackathon.debug.xcconfig"; sourceTree = "<group>"; };
+		D0E4CD465DE044B3816D871CEFB493ED /* ReflectFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReflectFilter.swift; path = Sources/Filter/ReflectFilter.swift; sourceTree = "<group>"; };
+		D187FD67DAE627A10DDE56C3CE30FE34 /* ContrastFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = ContrastFilter.metal; path = Sources/Filter/ContrastFilter.metal; sourceTree = "<group>"; };
+		D5E89926A6E50BD6EB6E023E19D22123 /* OverlayFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OverlayFilter.swift; path = Sources/Filter/OverlayFilter.swift; sourceTree = "<group>"; };
+		D81E9D8E1CAEEE68AC84F268BBCF7008 /* FIColorType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FIColorType.swift; path = Sources/Type/FIColorType.swift; sourceTree = "<group>"; };
+		D9133B92B257D5FC2B684F8931E6BD58 /* FIColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FIColor.swift; path = Sources/Type/FIColor.swift; sourceTree = "<group>"; };
+		D91BD0FB805D578F336C2BF98FD79984 /* SepiaFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SepiaFilter.swift; path = Sources/Filter/SepiaFilter.swift; sourceTree = "<group>"; };
+		D93332C6E4F6E18DE1C99E06BA63580C /* HardMixFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HardMixFilter.swift; path = Sources/Filter/HardMixFilter.swift; sourceTree = "<group>"; };
+		DC5309F49D3C716B82955EB6B921FA17 /* PhoenixFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhoenixFilter.swift; path = Sources/Filter/PhoenixFilter.swift; sourceTree = "<group>"; };
+		DE6907E49E3FF8E78410B9CBD74F75AB /* TextureAppendFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = TextureAppendFilter.metal; path = Sources/Filter/TextureAppendFilter.metal; sourceTree = "<group>"; };
+		E0F59C06D90E8A3E1BBB80B7417AEE48 /* Pods-hackathon.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-hackathon.modulemap"; sourceTree = "<group>"; };
+		E20E4DDA1BB988E5C4AADB925DF818A8 /* HueFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = HueFilter.metal; path = Sources/Filter/HueFilter.metal; sourceTree = "<group>"; };
+		E30A33C8E6CE47E3B3FD3538A9EB8F78 /* FlexibleImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FlexibleImage-dummy.m"; sourceTree = "<group>"; };
+		E439DDD7B6F0093CA13029538EF5D54C /* ColorFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = ColorFilter.metal; path = Sources/Filter/ColorFilter.metal; sourceTree = "<group>"; };
+		E45D2871ED3C45913553D1EE8069B00A /* MultiplyFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultiplyFilter.swift; path = Sources/Filter/MultiplyFilter.swift; sourceTree = "<group>"; };
+		E575BB92394895B29460D940FC6658AB /* SubtractFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SubtractFilter.swift; path = Sources/Filter/SubtractFilter.swift; sourceTree = "<group>"; };
+		E5C42AC1796757A6C73146C42A389933 /* MonochromeFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = MonochromeFilter.metal; path = Sources/Filter/MonochromeFilter.metal; sourceTree = "<group>"; };
+		E65D9F9DF8B58CCAB9B9CF3F610F0584 /* HardMixFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = HardMixFilter.metal; path = Sources/Filter/HardMixFilter.metal; sourceTree = "<group>"; };
+		E9141105BC5995DBDFC046D06649C8C1 /* ExclusionFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExclusionFilter.swift; path = Sources/Filter/ExclusionFilter.swift; sourceTree = "<group>"; };
+		EBC5C51E956ECB50D61187474E5F72C6 /* DifferenceFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DifferenceFilter.swift; path = Sources/Filter/DifferenceFilter.swift; sourceTree = "<group>"; };
+		F018B7C01E368FB1DC1950754F1AC244 /* AverageFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AverageFilter.swift; path = Sources/Filter/AverageFilter.swift; sourceTree = "<group>"; };
+		F08F94B5A7E8FA202196F9314BC0E2F9 /* Pods-hackathon-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-hackathon-frameworks.sh"; sourceTree = "<group>"; };
+		F175DA497029C1DE91D4348A9D871718 /* NormalFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = NormalFilter.metal; path = Sources/Filter/NormalFilter.metal; sourceTree = "<group>"; };
+		F693E7D023747F61AF872878C949E330 /* PhoenixFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = PhoenixFilter.metal; path = Sources/Filter/PhoenixFilter.metal; sourceTree = "<group>"; };
+		F7C875B5660F2C4D04C98FF32DDA649C /* ImageMetalDevice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageMetalDevice.swift; path = Sources/Device/ImageMetalDevice.swift; sourceTree = "<group>"; };
+		FA6A622FF6F89E846184DDFC9A0DBB40 /* GreyscaleFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GreyscaleFilter.swift; path = Sources/Filter/GreyscaleFilter.swift; sourceTree = "<group>"; };
+		FB14BA443E59A55B9C092DADB0172303 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC01854BE479575C01D0A59508A3E980 /* PinLightFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PinLightFilter.swift; path = Sources/Filter/PinLightFilter.swift; sourceTree = "<group>"; };
+		FD77BCF5471CFEC96E0180FB6CB6868F /* HardLightFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; name = HardLightFilter.metal; path = Sources/Filter/HardLightFilter.metal; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B28DDF242451FE53384FFD055330EDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7CEDBBE53971481EA296B6E66326F97 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5512F7900669AB9B8F6E78B622AB2909 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD7B20FD815FE4EEDE9AE579ABF63D4A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22A910C39AF43D3C0FABCB8BE63CDF8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4AC5C610365C5CA914269668775E2DF6 /* FlexibleImage.framework */,
+				396F9703087106E0A198E72687B62BD8 /* Pods_hackathon.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B3E932A32CD571881A9CD18C0009B4C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				30494FE917C0F6D04DCA5658AC1548F0 /* FlexibleImage.modulemap */,
+				0281A2572BEE97098E46489B0BFD4370 /* FlexibleImage.xcconfig */,
+				E30A33C8E6CE47E3B3FD3538A9EB8F78 /* FlexibleImage-dummy.m */,
+				1F8302E7604F72B6D1C8509F1E6F89A7 /* FlexibleImage-prefix.pch */,
+				B4D1BFA235A01F2CC3FEE86BA9D34C3D /* FlexibleImage-umbrella.h */,
+				39860A0E5859D917F533059CEFF39CE4 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FlexibleImage";
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				7FCC3411773DDCE11B7CBA563A51025A /* Pods */,
+				22A910C39AF43D3C0FABCB8BE63CDF8A /* Products */,
+				D91246E4AC4B6483AC22B4933C8E9262 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7FCC3411773DDCE11B7CBA563A51025A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8592BA94C5684F4466070BAF6C5EA864 /* FlexibleImage */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8592BA94C5684F4466070BAF6C5EA864 /* FlexibleImage */ = {
+			isa = PBXGroup;
+			children = (
+				3BA5BF57F17597FE154C9E3C8C94B3BC /* AddFilter.metal */,
+				14683DEBE4466225D315BB1211DF8EB1 /* AddFilter.swift */,
+				C567C179D5A87516DCE173DD44E8A915 /* AlgorithmType.swift */,
+				1C84A4D181B8F3CC937BC0A926DAD58B /* AverageFilter.metal */,
+				F018B7C01E368FB1DC1950754F1AC244 /* AverageFilter.swift */,
+				A6B4AB2C9BA6AE01C0FA5D60B69DF1DC /* BlurFilter.metal */,
+				08DC5E3C6FC3626E8F7077FF80320928 /* BlurFilter.swift */,
+				09E58A3AEEDC6C8A51D243BEF0E022DE /* BrightnessFilter.metal */,
+				0BB8EC01AFC71012B0D2A7720D4E0EF3 /* BrightnessFilter.swift */,
+				353CDDDCAD9E0AB7A7A9F696EB6D73F6 /* ChromaKeyFilter.metal */,
+				0FF86345FBF4EF7578716D8436C1AD78 /* ChromaKeyFilter.swift */,
+				742B0B8AF538F066FD7107AAABED6AFD /* ColorBurnFilter.metal */,
+				BFACDA723E22BA04775EC5C7C3E7EB92 /* ColorBurnFilter.swift */,
+				9464DC77B6A64F3F0C7662B4647CA8AF /* ColorDodgeFilter.metal */,
+				C0FB2FC22FB3545AD3A818989173F91F /* ColorDodgeFilter.swift */,
+				E439DDD7B6F0093CA13029538EF5D54C /* ColorFilter.metal */,
+				34228B0C5BAA1089A07FC1A5B66A1BEA /* ColorFilter.swift */,
+				9CCCC8A37FF88CEF17EDA16C866C68F7 /* ContextType.swift */,
+				D187FD67DAE627A10DDE56C3CE30FE34 /* ContrastFilter.metal */,
+				6EEF9E71C95B4B229F786DEFAFB765A6 /* ContrastFilter.swift */,
+				19E21BE846B39F2EC1D3220B607E12BE /* CornerType.swift */,
+				0FC43371CDBFE27C82AFF02EEDDDF639 /* DarkenFilter.metal */,
+				14A07CA648E35D4E6C5BEEE7A2063333 /* DarkenFilter.swift */,
+				1E8D8FA6A54AA0D00F63F708EF7A6F2C /* DifferenceFilter.metal */,
+				EBC5C51E956ECB50D61187474E5F72C6 /* DifferenceFilter.swift */,
+				6982CBAEFCAAA843AB7156D14D833C2D /* EdgeInsets.swift */,
+				7E1EA433A9235551A5561FD995C848E3 /* ExclusionFilter.metal */,
+				E9141105BC5995DBDFC046D06649C8C1 /* ExclusionFilter.swift */,
+				1BF816A75A492BADA69005A34C8EEFB6 /* FIBezierPath.swift */,
+				D9133B92B257D5FC2B684F8931E6BD58 /* FIColor.swift */,
+				D81E9D8E1CAEEE68AC84F268BBCF7008 /* FIColorType.swift */,
+				109D154211EF70B2837F2F78A1148C96 /* FIImage.swift */,
+				7C1C5B645B534E32E7A9E9567B042CCB /* FlexibleImage.swift */,
+				65A1745DCFBF20683DFFCB0844A39302 /* GammaFilter.metal */,
+				53D215D4E7251DC6FB6A206291E95533 /* GammaFilter.swift */,
+				CC0EB97B08452C1C27F63BDFB58BAD05 /* GlowFilter.metal */,
+				7878F90F301CC687BDE8C308AD534A50 /* GlowFilter.swift */,
+				A8FE540C45F3FA395FD70B784B1CCBDF /* GreyscaleFilter.metal */,
+				FA6A622FF6F89E846184DDFC9A0DBB40 /* GreyscaleFilter.swift */,
+				FD77BCF5471CFEC96E0180FB6CB6868F /* HardLightFilter.metal */,
+				7C553DFD2406419CDCA64991498102AB /* HardLightFilter.swift */,
+				E65D9F9DF8B58CCAB9B9CF3F610F0584 /* HardMixFilter.metal */,
+				D93332C6E4F6E18DE1C99E06BA63580C /* HardMixFilter.swift */,
+				E20E4DDA1BB988E5C4AADB925DF818A8 /* HueFilter.metal */,
+				B36185C4D9140214FEBD259DC35F6F49 /* HueFilter.swift */,
+				78C6E90853ECA2E427AC0DD8BDE176F9 /* ImageDevice.swift */,
+				01804BA323C3F899498A73576B8949CB /* ImageFilter.swift */,
+				F7C875B5660F2C4D04C98FF32DDA649C /* ImageMetalDevice.swift */,
+				25599F2D412CB0A4DEB49A60A3F14E92 /* ImageNoneDevice.swift */,
+				08DD7B7300AEC4171822E2CD25778AAD /* InvertFilter.metal */,
+				BB9F52D1CFC4C0E6221748F776A7FCB0 /* InvertFilter.swift */,
+				2DA13670D11A2D25858D2C05815916F1 /* LightenFilter.metal */,
+				B68640A850B803AD3297C58AD2A7EA82 /* LightenFilter.swift */,
+				26ABCC51DF08A7E174FC4CDD0F1D2C40 /* LinearBurnFilter.metal */,
+				4F01E5575268E76B550ABE1107300492 /* LinearBurnFilter.swift */,
+				AF2C394EB7826189071B3D77056EF903 /* LinearDodgeFilter.swift */,
+				CAD8E498674C820B66A0ED091286CFB6 /* LinearLightFilter.metal */,
+				738D258BCCBC3DCE8BBAA1E5DD0ECB24 /* LinearLightFilter.swift */,
+				2FF471A62F53DB74A4AE209C4B1343ED /* LuminosityFilter.metal */,
+				9408444422C8F67F7379E59EC401D1F1 /* LuminosityFilter.swift */,
+				E5C42AC1796757A6C73146C42A389933 /* MonochromeFilter.metal */,
+				62B2357786A0FDB7D49DD35C80DB87F6 /* MonochromeFilter.swift */,
+				842E86FE96801623C4CDEE8B52633601 /* MultiplyFilter.metal */,
+				E45D2871ED3C45913553D1EE8069B00A /* MultiplyFilter.swift */,
+				8A26AA5F32E9377662F254FF2BF8836E /* NegativeFilter.metal */,
+				B436BE096A9FF012FF590C96B3B06393 /* NegativeFilter.swift */,
+				F175DA497029C1DE91D4348A9D871718 /* NormalFilter.metal */,
+				6B4AF82E7A1C00824F5754E15E284D87 /* NormalFilter.swift */,
+				7616303B443FE85369C3944CD6DD5C5A /* OverlayFilter.metal */,
+				D5E89926A6E50BD6EB6E023E19D22123 /* OverlayFilter.swift */,
+				F693E7D023747F61AF872878C949E330 /* PhoenixFilter.metal */,
+				DC5309F49D3C716B82955EB6B921FA17 /* PhoenixFilter.swift */,
+				1D43897756D44EB31D1EBAC29E206C18 /* PinLightFilter.metal */,
+				FC01854BE479575C01D0A59508A3E980 /* PinLightFilter.swift */,
+				29F51DFE4EEE2754A63DAA8E9E1EED92 /* PosterizeFilter.metal */,
+				17B7E8B50D46B1A74E7793ECDA7C0A5F /* PosterizeFilter.swift */,
+				6E821F865FCF945E0ECAB31DA811F0DE /* ReflectFilter.metal */,
+				D0E4CD465DE044B3816D871CEFB493ED /* ReflectFilter.swift */,
+				55E87A4C7E8CBC243DC684535279D3D8 /* SaturationFilter.metal */,
+				7476A6F1465C6BF958D6433F99E4EE92 /* SaturationFilter.swift */,
+				4F9D1510422066D99CDB7A876807078E /* ScreenFilter.metal */,
+				B5A354ADE926AB18F03CB185375987E0 /* ScreenFilter.swift */,
+				C62B6762745E15795120A9076F08ADBE /* SepiaFilter.metal */,
+				D91BD0FB805D578F336C2BF98FD79984 /* SepiaFilter.swift */,
+				099C123B9ECC9BE520EA03DBA6403B62 /* SoftLightFilter.metal */,
+				80417B5C6B7FF576FEFC13DCC588D97E /* SoftLightFilter.swift */,
+				992A758B9EC86A40148401134B96D6F0 /* SolarizeFilter.metal */,
+				09C5F786F0FF6AA6DC59E842912E095F /* SolarizeFilter.swift */,
+				B83ACD45FCC4B6E5B0E11F92FFCA4A00 /* SubtractFilter.metal */,
+				E575BB92394895B29460D940FC6658AB /* SubtractFilter.swift */,
+				B1420AAC8E8BBE2C93F3BEC4D9558C66 /* SwizzlingFilter.metal */,
+				50EE63827AB405F7F61178A6F0C91DC0 /* SwizzlingFilter.swift */,
+				DE6907E49E3FF8E78410B9CBD74F75AB /* TextureAppendFilter.metal */,
+				9B34D9B292AADFC88C7BE9B960583E5D /* TextureAppendFilter.swift */,
+				495BEDC9B1A23F055B666B3FC8922CB0 /* VibranceFilter.metal */,
+				496DC68F73DF3AD75600EDA1F43612A4 /* VibranceFilter.swift */,
+				90C81D0E8BCD9A5D74CF855AC242E9BD /* VividLightFilter.metal */,
+				131727DA269B8FFC963819C3D3BAF614 /* VividLightFilter.swift */,
+				2B3E932A32CD571881A9CD18C0009B4C /* Support Files */,
+			);
+			name = FlexibleImage;
+			path = FlexibleImage;
+			sourceTree = "<group>";
+		};
+		94B68D2F5C90256D5E19031E814C384B /* Pods-hackathon */ = {
+			isa = PBXGroup;
+			children = (
+				FB14BA443E59A55B9C092DADB0172303 /* Info.plist */,
+				E0F59C06D90E8A3E1BBB80B7417AEE48 /* Pods-hackathon.modulemap */,
+				653372342263D32A9A742C7E027D17BD /* Pods-hackathon-acknowledgements.markdown */,
+				6573EE2D386C94A2256DA38ED551849F /* Pods-hackathon-acknowledgements.plist */,
+				8A7B74C2A0F6D31BD6000D5EA3445EDB /* Pods-hackathon-dummy.m */,
+				F08F94B5A7E8FA202196F9314BC0E2F9 /* Pods-hackathon-frameworks.sh */,
+				83F718ABE084E9719DE45D59AEA19C2C /* Pods-hackathon-resources.sh */,
+				0622CCA68032865BB6F8FCE49DD62AFD /* Pods-hackathon-umbrella.h */,
+				D06C39A0E3719C1204FC5475319147A9 /* Pods-hackathon.debug.xcconfig */,
+				75991F7422D82AF79477814E5D9E53AC /* Pods-hackathon.release.xcconfig */,
+			);
+			name = "Pods-hackathon";
+			path = "Target Support Files/Pods-hackathon";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D91246E4AC4B6483AC22B4933C8E9262 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				94B68D2F5C90256D5E19031E814C384B /* Pods-hackathon */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		43A62AF8D9B35522D11B964BA1AB9BBA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4EE2909F4A527F6674334C2D28E8893 /* Pods-hackathon-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7FA72E43F91662FAA7F56D919A4FF17 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				020A68EB14F949D57AEC8419B0406933 /* FlexibleImage-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		644E107FBE943FF51CB4CF431EF1FCF4 /* FlexibleImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2930322790DF7E7E93C1C524E64D0A8 /* Build configuration list for PBXNativeTarget "FlexibleImage" */;
+			buildPhases = (
+				0F5892A7A4B3D1EB1431290EB5A0609E /* Sources */,
+				1B28DDF242451FE53384FFD055330EDB /* Frameworks */,
+				E7FA72E43F91662FAA7F56D919A4FF17 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlexibleImage;
+			productName = FlexibleImage;
+			productReference = 4AC5C610365C5CA914269668775E2DF6 /* FlexibleImage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9C16A5CC522F27907FC2D8829FFF9AE8 /* Pods-hackathon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E22E55FA04D0F7F6E83179243EDD5174 /* Build configuration list for PBXNativeTarget "Pods-hackathon" */;
+			buildPhases = (
+				7837527D0398A6A44E35F2055A3166FB /* Sources */,
+				5512F7900669AB9B8F6E78B622AB2909 /* Frameworks */,
+				43A62AF8D9B35522D11B964BA1AB9BBA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38BD546DDADA9B45AD2A6657149C78C4 /* PBXTargetDependency */,
+			);
+			name = "Pods-hackathon";
+			productName = "Pods-hackathon";
+			productReference = 396F9703087106E0A198E72687B62BD8 /* Pods_hackathon.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 22A910C39AF43D3C0FABCB8BE63CDF8A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				644E107FBE943FF51CB4CF431EF1FCF4 /* FlexibleImage */,
+				9C16A5CC522F27907FC2D8829FFF9AE8 /* Pods-hackathon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F5892A7A4B3D1EB1431290EB5A0609E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05A76305E2CCF75DDB6AECE986A315A2 /* AddFilter.metal in Sources */,
+				986654AC09BB0D80A4913C62A44F425E /* AddFilter.swift in Sources */,
+				275C995431F4512BB5347A18A127394A /* AlgorithmType.swift in Sources */,
+				1F09025C6C7A4B5518BE88F0D4407176 /* AverageFilter.metal in Sources */,
+				4093DB87F72331BC26037CC42E74809A /* AverageFilter.swift in Sources */,
+				C549907D1B4858ECC49CF525A11A1AB4 /* BlurFilter.metal in Sources */,
+				00118FF17292D4BB985B9917F0C5D701 /* BlurFilter.swift in Sources */,
+				D06B487EC16EBA8349D43DED98B39F49 /* BrightnessFilter.metal in Sources */,
+				E717912A5AAA93F1916BE036582B38CC /* BrightnessFilter.swift in Sources */,
+				F023DCB1A5B5F90EFC606E985A6D57FF /* ChromaKeyFilter.metal in Sources */,
+				F78FEAC28321D5FD2C5E9BB532525EEC /* ChromaKeyFilter.swift in Sources */,
+				DE1411FBB3B716A88F1C8C7083B825A6 /* ColorBurnFilter.metal in Sources */,
+				E3BCC82E134F47E2048CCE01059B422D /* ColorBurnFilter.swift in Sources */,
+				0E890F9F0D365B8D074B916773CB49AB /* ColorDodgeFilter.metal in Sources */,
+				470C701446418B637811E2A807AFA632 /* ColorDodgeFilter.swift in Sources */,
+				2E4D4A9907BCFC4B5A5AB42003320BC5 /* ColorFilter.metal in Sources */,
+				070BAD37D042F756B3F36EC53B41715B /* ColorFilter.swift in Sources */,
+				4E99BF1069EF772EBE409F09905013A9 /* ContextType.swift in Sources */,
+				E8159D8D2CC71D08906E604819338668 /* ContrastFilter.metal in Sources */,
+				2A4C5AFDAF8124F8FC91CE48C6F36804 /* ContrastFilter.swift in Sources */,
+				1D6079B0EE96638D9907097EC455CD4F /* CornerType.swift in Sources */,
+				9C186F8F4B6A27916E92CD905B63894D /* DarkenFilter.metal in Sources */,
+				4D681198E1965582233C12C79525AF5E /* DarkenFilter.swift in Sources */,
+				5E24B2B569C3F8A05B520BB119F01BA0 /* DifferenceFilter.metal in Sources */,
+				253917686D6B8D09DA5A31AD55ABB38F /* DifferenceFilter.swift in Sources */,
+				19525F8DC0A152E2323618461547DA99 /* EdgeInsets.swift in Sources */,
+				A17CAE809F2CBFFB9A5193B0200F9070 /* ExclusionFilter.metal in Sources */,
+				56AEDB232A4B4ECD103B5B3C9DB98E12 /* ExclusionFilter.swift in Sources */,
+				5F82BF9A5EB49D624649F1DEDF78AF92 /* FIBezierPath.swift in Sources */,
+				3B3A1635F6C978BCAA1362B7451D95A7 /* FIColor.swift in Sources */,
+				497427FCEA502DCE063D18269D8C5C39 /* FIColorType.swift in Sources */,
+				9E7A5D3749463FAFED40878B13C168BF /* FIImage.swift in Sources */,
+				0538809AF098CF87BB5EA80E11D9B964 /* FlexibleImage-dummy.m in Sources */,
+				C708641A8F52318F4131E1CC2FFB7336 /* FlexibleImage.swift in Sources */,
+				772A99A40A0EB004F49F98B8AC71065E /* GammaFilter.metal in Sources */,
+				42A99DF41607595AFB0040701479FE06 /* GammaFilter.swift in Sources */,
+				49C1F916B79894AC1B2FF6757B1D03C1 /* GlowFilter.metal in Sources */,
+				3D02AC308E91350F0E30E0F318FB68DB /* GlowFilter.swift in Sources */,
+				E6B91882AB70F608B27648A3CDEA1DCB /* GreyscaleFilter.metal in Sources */,
+				9F9E40678D588947B501042F9DAF11F3 /* GreyscaleFilter.swift in Sources */,
+				47CDD575FCC9D6B7FBF215FDA041E64E /* HardLightFilter.metal in Sources */,
+				B86DE4F1BF0206B9039EF30BC86D3AAF /* HardLightFilter.swift in Sources */,
+				200A190BCCC411726AD3B655F52AC669 /* HardMixFilter.metal in Sources */,
+				67713D87FBC6773DEE3CC70E477E2693 /* HardMixFilter.swift in Sources */,
+				3A9824EFF0F8B68FFAFD292CCBF723B2 /* HueFilter.metal in Sources */,
+				2E49066F43DE453C22852D68FF5677B4 /* HueFilter.swift in Sources */,
+				17DE11019E17564DC6DB7F80A6B79274 /* ImageDevice.swift in Sources */,
+				56E49BE201981E25BC416E7259E6B251 /* ImageFilter.swift in Sources */,
+				F1C5ED862DC08133D6EE838C4735205D /* ImageMetalDevice.swift in Sources */,
+				D73A6F5ABBFBD6369AD4C1238FA8938D /* ImageNoneDevice.swift in Sources */,
+				F0CD28CF6DA9A79273C89AE1606FC606 /* InvertFilter.metal in Sources */,
+				A34AAA1858BD192A03E750384F6510F0 /* InvertFilter.swift in Sources */,
+				19F731D19FD3944FE5609628DCD77339 /* LightenFilter.metal in Sources */,
+				A6092D61C834CF748EF346858ACFFABC /* LightenFilter.swift in Sources */,
+				6DDBE8C154372122F160CB9AA40F3128 /* LinearBurnFilter.metal in Sources */,
+				8A78F837050E38D8AB4A2FE95211C9A9 /* LinearBurnFilter.swift in Sources */,
+				5D11D39DF53355C8005B4B628F1DBABC /* LinearDodgeFilter.swift in Sources */,
+				22D300885AF13453F803A46075D70357 /* LinearLightFilter.metal in Sources */,
+				C9A19173442FC3F05A053CA86CC946B1 /* LinearLightFilter.swift in Sources */,
+				2D696BB5097D90C7A557D7F41628A7ED /* LuminosityFilter.metal in Sources */,
+				3226D1D3245138BE30154B0B8008C88F /* LuminosityFilter.swift in Sources */,
+				5A76CFE9A89683088FF655A656E2C2AC /* MonochromeFilter.metal in Sources */,
+				D7458003604E0A4FE7EE5CEA3E0EC7B5 /* MonochromeFilter.swift in Sources */,
+				E50D16919747DC8A49BD54103650D0C9 /* MultiplyFilter.metal in Sources */,
+				2A4B8DEEE5AB06F1E6DA7E514D1A222D /* MultiplyFilter.swift in Sources */,
+				3B442496149C11E935FA482A8B5C286C /* NegativeFilter.metal in Sources */,
+				51968A4F1029EEF26BFC7438BDCAE759 /* NegativeFilter.swift in Sources */,
+				54BB0E9187DD26D7080E4FC1FC734A9F /* NormalFilter.metal in Sources */,
+				9AACAAD1BF0B17A4B9750374C3A65CF5 /* NormalFilter.swift in Sources */,
+				1D2A071AB82C1191FD732D25DD92341F /* OverlayFilter.metal in Sources */,
+				17EFF75CA70B8E2E74705B68981B69C1 /* OverlayFilter.swift in Sources */,
+				DF1F2142EFBA5A34EC41FA099B4D261E /* PhoenixFilter.metal in Sources */,
+				926D10EDD671FFACF5A98B307D42342B /* PhoenixFilter.swift in Sources */,
+				C03D95658403AD3794F9E97AE0E6FA19 /* PinLightFilter.metal in Sources */,
+				0CB735CD19089628EF6D5AF3750022B1 /* PinLightFilter.swift in Sources */,
+				75E07202C4F2832934CE834BACB683D2 /* PosterizeFilter.metal in Sources */,
+				A702C33390659BE40FC4D811D6C395BD /* PosterizeFilter.swift in Sources */,
+				2F4CE1C11039E09363098AE2DB6B6AC7 /* ReflectFilter.metal in Sources */,
+				FE71C29A7102AE364801140B5A21F9D3 /* ReflectFilter.swift in Sources */,
+				24366A074FF54370B7C461C5D2187542 /* SaturationFilter.metal in Sources */,
+				07629D9D841BA0730857E8F94D8A97D6 /* SaturationFilter.swift in Sources */,
+				A5901E76A555C55F2EEF86240DDACFB8 /* ScreenFilter.metal in Sources */,
+				D35412A34A4383BF0CCCBA4C35737002 /* ScreenFilter.swift in Sources */,
+				74220F8D749467A03C7F9DDA886EA2D2 /* SepiaFilter.metal in Sources */,
+				F53138A84D23E0DAED44FB3B0CD4FC72 /* SepiaFilter.swift in Sources */,
+				DAC58EF14D172495C17A9281F67FDFCE /* SoftLightFilter.metal in Sources */,
+				899ADDF02CD49D5C137D9155384731B9 /* SoftLightFilter.swift in Sources */,
+				8FEFF53049D076777BEE1A997731D98B /* SolarizeFilter.metal in Sources */,
+				7405E6601DF2A6997E6B5BE5658A2D73 /* SolarizeFilter.swift in Sources */,
+				A5AE88E768BABE7C33382ACC3DAF8BF0 /* SubtractFilter.metal in Sources */,
+				1CBCAFB63AE895ADD8EA5F79E37DE9FF /* SubtractFilter.swift in Sources */,
+				43B5AB3E1FED0C92E38431F3A54572F0 /* SwizzlingFilter.metal in Sources */,
+				EAC1924C2F52F536744F6EB4112ABD7C /* SwizzlingFilter.swift in Sources */,
+				C1B32422808A3F0DB14453A6EA00FF27 /* TextureAppendFilter.metal in Sources */,
+				C5FA2FE9907634392EB38D7092E96CF8 /* TextureAppendFilter.swift in Sources */,
+				A1378D3813ED0B52E6D5B7FB8B4BB806 /* VibranceFilter.metal in Sources */,
+				5F9BDED97D74194852F82E0ED62AE14E /* VibranceFilter.swift in Sources */,
+				7A0B0FE05E456BC9CFDBA2CD9C769F29 /* VividLightFilter.metal in Sources */,
+				86015E6A05E1EE502C46D7C97A85E192 /* VividLightFilter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7837527D0398A6A44E35F2055A3166FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C93C9A5E81D418A527D462C1563D4F7E /* Pods-hackathon-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		38BD546DDADA9B45AD2A6657149C78C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FlexibleImage;
+			target = 644E107FBE943FF51CB4CF431EF1FCF4 /* FlexibleImage */;
+			targetProxy = 0BBB835A24D68F570368CDEAB4FA2C2B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0BA632F0BE3B4B2A625C560D96127975 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0281A2572BEE97098E46489B0BFD4370 /* FlexibleImage.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FlexibleImage/FlexibleImage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FlexibleImage/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FlexibleImage/FlexibleImage.modulemap";
+				PRODUCT_MODULE_NAME = FlexibleImage;
+				PRODUCT_NAME = FlexibleImage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4928BAC1A79582234D26DFBD411A8BD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D06C39A0E3719C1204FC5475319147A9 /* Pods-hackathon.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-hackathon/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-hackathon/Pods-hackathon.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5DC0083F57E9AB706B46C5B5D73B38D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		AEEA80476F98EB645C4DD53EB2BB6D88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		BDA254927F0A9DC40A7006EFB3BB755C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75991F7422D82AF79477814E5D9E53AC /* Pods-hackathon.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-hackathon/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-hackathon/Pods-hackathon.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CE73280ECFB4003532D5144F33954478 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0281A2572BEE97098E46489B0BFD4370 /* FlexibleImage.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FlexibleImage/FlexibleImage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FlexibleImage/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FlexibleImage/FlexibleImage.modulemap";
+				PRODUCT_MODULE_NAME = FlexibleImage;
+				PRODUCT_NAME = FlexibleImage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DC0083F57E9AB706B46C5B5D73B38D8 /* Debug */,
+				AEEA80476F98EB645C4DD53EB2BB6D88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2930322790DF7E7E93C1C524E64D0A8 /* Build configuration list for PBXNativeTarget "FlexibleImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BA632F0BE3B4B2A625C560D96127975 /* Debug */,
+				CE73280ECFB4003532D5144F33954478 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E22E55FA04D0F7F6E83179243EDD5174 /* Build configuration list for PBXNativeTarget "Pods-hackathon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4928BAC1A79582234D26DFBD411A8BD6 /* Debug */,
+				BDA254927F0A9DC40A7006EFB3BB755C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

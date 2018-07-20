@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,13 +13,65 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="hackathon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wku-PQ-5kZ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="camera" id="5H7-4f-DCj">
+                                        <connections>
+                                            <action selector="cameraClick:" destination="BYZ-38-t0r" id="xFw-DD-VpY"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="filter1" id="aGN-fF-WB5">
+                                        <connections>
+                                            <action selector="filter1Click:" destination="BYZ-38-t0r" id="Iqu-jb-Lng"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="filter2" id="JZr-80-9t3">
+                                        <connections>
+                                            <action selector="filter2Click:" destination="BYZ-38-t0r" id="bsH-jT-6N2"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="filter3" id="FXS-eo-yT8">
+                                        <connections>
+                                            <action selector="filter3Click:" destination="BYZ-38-t0r" id="caN-wQ-olc"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="filter4" id="9QJ-Ls-Qha">
+                                        <connections>
+                                            <action selector="filter4Click:" destination="BYZ-38-t0r" id="Hxk-Xi-MRK"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="save" id="leC-8z-STH">
+                                        <connections>
+                                            <action selector="saveClick:" destination="BYZ-38-t0r" id="hov-E2-hvF"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MS4-Sp-C5G">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MS4-Sp-C5G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="21J-Lc-wgM"/>
+                            <constraint firstItem="wku-PQ-5kZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7jB-1f-pjZ"/>
+                            <constraint firstItem="wku-PQ-5kZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Qpw-0y-mfZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MS4-Sp-C5G" secondAttribute="trailing" id="ZHA-EZ-9m4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MS4-Sp-C5G" secondAttribute="bottom" id="hY5-il-Qwy"/>
+                            <constraint firstItem="wku-PQ-5kZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qMX-PT-JGS"/>
+                            <constraint firstItem="MS4-Sp-C5G" firstAttribute="top" secondItem="wku-PQ-5kZ" secondAttribute="bottom" id="vgH-cE-xoh"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="MS4-Sp-C5G" id="VRW-3K-GFE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -1,0 +1,16 @@
+PODS:
+  - FlexibleImage (1.9)
+
+DEPENDENCIES:
+  - FlexibleImage (~> 1.9)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FlexibleImage
+
+SPEC CHECKSUMS:
+  FlexibleImage: 6b66e0df34c51ca2954d5501205a9902fd3c9f35
+
+PODFILE CHECKSUM: 34b2dc815d5f9bd9fc601d46af6fd461114bfb22
+
+COCOAPODS: 1.5.3
