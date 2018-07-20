@@ -28,7 +28,7 @@
                                     </barButtonItem>
                                     <barButtonItem title="filter1" id="aGN-fF-WB5">
                                         <connections>
-                                            <action selector="filter1Click:" destination="BYZ-38-t0r" id="Iqu-jb-Lng"/>
+                                            <action selector="filter1Click:" destination="BYZ-38-t0r" id="j8U-b2-gcu"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem title="filter2" id="JZr-80-9t3">
@@ -54,18 +54,22 @@
                                 </items>
                             </toolbar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MS4-Sp-C5G">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="7" y="153" width="360" height="360"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="360" id="OKk-Z0-AEF"/>
+                                    <constraint firstAttribute="height" constant="360" id="ecO-1E-vVK"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="MS4-Sp-C5G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="21J-Lc-wgM"/>
                             <constraint firstItem="wku-PQ-5kZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7jB-1f-pjZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MS4-Sp-C5G" secondAttribute="bottom" constant="154" id="9fO-qI-wz3"/>
                             <constraint firstItem="wku-PQ-5kZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Qpw-0y-mfZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MS4-Sp-C5G" secondAttribute="trailing" id="ZHA-EZ-9m4"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MS4-Sp-C5G" secondAttribute="bottom" id="hY5-il-Qwy"/>
+                            <constraint firstItem="MS4-Sp-C5G" firstAttribute="top" secondItem="wku-PQ-5kZ" secondAttribute="bottom" constant="89" id="afw-fm-OgI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MS4-Sp-C5G" secondAttribute="trailing" constant="8" id="d8Q-i8-5Fk"/>
+                            <constraint firstItem="MS4-Sp-C5G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="7" id="q4r-l1-Yku"/>
                             <constraint firstItem="wku-PQ-5kZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qMX-PT-JGS"/>
-                            <constraint firstItem="MS4-Sp-C5G" firstAttribute="top" secondItem="wku-PQ-5kZ" secondAttribute="bottom" id="vgH-cE-xoh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -75,6 +79,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="88.799999999999997" y="38.23088455772114"/>
         </scene>
     </scenes>
 </document>
