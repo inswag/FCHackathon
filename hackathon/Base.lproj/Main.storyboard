@@ -54,19 +54,19 @@
                                 </items>
                             </toolbar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MS4-Sp-C5G">
-                                <rect key="frame" x="7" y="153" width="360" height="360"/>
+                                <rect key="frame" x="7" y="93" width="360" height="480"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="360" id="OKk-Z0-AEF"/>
-                                    <constraint firstAttribute="height" constant="360" id="ecO-1E-vVK"/>
+                                    <constraint firstAttribute="height" constant="480" id="ecO-1E-vVK"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wku-PQ-5kZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7jB-1f-pjZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MS4-Sp-C5G" secondAttribute="bottom" constant="154" id="9fO-qI-wz3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MS4-Sp-C5G" secondAttribute="bottom" constant="94" id="9fO-qI-wz3"/>
                             <constraint firstItem="wku-PQ-5kZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Qpw-0y-mfZ"/>
-                            <constraint firstItem="MS4-Sp-C5G" firstAttribute="top" secondItem="wku-PQ-5kZ" secondAttribute="bottom" constant="89" id="afw-fm-OgI"/>
+                            <constraint firstItem="MS4-Sp-C5G" firstAttribute="top" secondItem="wku-PQ-5kZ" secondAttribute="bottom" constant="29" id="afw-fm-OgI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MS4-Sp-C5G" secondAttribute="trailing" constant="8" id="d8Q-i8-5Fk"/>
                             <constraint firstItem="MS4-Sp-C5G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="7" id="q4r-l1-Yku"/>
                             <constraint firstItem="wku-PQ-5kZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qMX-PT-JGS"/>
